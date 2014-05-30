@@ -20,8 +20,8 @@ public class Cadastro {
 	}
 
 	public void cadastraProdutos() {
-		String descricao[] = {"Bicicleta", "Televisao", "DVD"};
-		Double preco[] = {356.83, 19.99, 195.60};
+		String descricao[] = { "Bicicleta", "Televisao", "DVD" };
+		Double preco[] = { 356.83, 19.99, 195.60 };
 		ProdutoDAO produtoDAO = new ProdutoDAO();
 		Produto produto = null;
 
@@ -34,7 +34,7 @@ public class Cadastro {
 	}
 
 	public void cadastraCategorias() {
-		String descricao[] = {"Utilidades", "Geral"};
+		String descricao[] = { "Utilidades", "Geral" };
 		CategoriaDAO categoriaDAO = new CategoriaDAO();
 		Categoria categoria = null;
 		ProdutoDAO produtoDAO = new ProdutoDAO();
