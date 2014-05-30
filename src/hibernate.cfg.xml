@@ -8,9 +8,9 @@
 		<!-- Configuração da conexão com o banco MYSQL e dialeto -->
 		<property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="connection.url">jdbc:mysql://host/db</property>
-		<property name="connection.username"></property>
-		<property name="connection.password"></property>
+		<property name="connection.url">jdbc:mysql://localhost/comercio</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">superuser</property>
 		<property name="current_session_context_class">thread</property>
 		
 		<!-- Usando as configurações do C3PO para pool de conexões -->
@@ -27,5 +27,7 @@
 		<property name="use_sql_comments">true</property>
 		
 		<!-- Mapeando classes -->
+		<mapping class="categoria.Categoria"/>
+		<mapping class="produto.Produto"/>
 	</session-factory>
 </hibernate-configuration>
